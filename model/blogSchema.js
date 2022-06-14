@@ -8,7 +8,7 @@ const blogSchema = mongoose.Schema({
 
     created_at: {
         type: Date,
-        required: true
+        default: Date.now()
     },
 
     blog_title: {
