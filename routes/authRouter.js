@@ -4,8 +4,6 @@ const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 
 const UserModel = require('../model/userSchema')
-const { rawListeners } = require('../model/userSchema')
-const { json } = require('express')
 
 const router = express.Router()
 
@@ -27,7 +25,7 @@ router.post('/', [
         const user = await UserModel.findOne({email: userData.email})
 
         if(!user){
-            return rawListeners.json('User not found!')
+            return res.json('User not found!')
         }
 
         //Compare plain text password to the hashed password

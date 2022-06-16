@@ -2,10 +2,22 @@ const express = require('express')
 const UserModel = require('../model/userSchema')
 const {check, validationResult} = require('express-validator')
 const bcrypt = require('bcrypt')
+const authMiddleware = require('../middleware/authMiddleware')
 const jwt = require('jsonwebtoken')
 
 //Create Router
 const router = express.Router()
+
+//GET USERS
+router.get('/', authMiddleware, async (req, res) => {
+    try {
+        const blogs = await UserModel.find()
+        res.status(200).json(blogs)
+    } catch (error) {
+        console.log(error);
+    }
+
+})
 
 //Register and Create a New User
 router.post('/', [

@@ -57,7 +57,7 @@ router.put('/:id', authMiddleware, async (req, res) => {
     }
 })
 
-// DELETE A BLOG
+// DELETE A BLOG BY ID
 router.delete('/:id', authMiddleware, async (req, res) => {
     const id = req.params.id
 
