@@ -1,19 +1,19 @@
 # BLOG Api
 
-...The Blog-API project is a full CRUD operation back-end project. The project utilizes NodeJS, Express, Mongoose, and MongoDB.
-...The user receives a Token at the header that allows the  user to access Public blogs then create, update, and delete a particular blog by ID.
-...The Blog API also protects the API with a hashed password. For added security Usernames/Emails must also be unique during the registration process.
+The Blog-API project is a full CRUD operation back-end project. The project utilizes NodeJS, Express, Mongoose, and MongoDB.
+The user receives a Token at the header that allows the  user to access Public blogs then create, update, and delete a particular blog by ID.
+The Blog API also protects the API with a hashed password. For added security Usernames/Emails must also be unique during the registration process.
 
 ## Installed dependencies
 
-... bcrypt
-...express
-...express-validator
-...mongoose
-...helmet
-...dotenv
-...jsonwebtoken
-...morgan
+- bcrypt
+- express
+- express-validator
+- mongoose
+- helmet
++ dotenv
++ jsonwebtoken
++ morgan
 
 ### Routes
 
