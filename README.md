@@ -11,11 +11,17 @@ The Blog API also protects the API with a hashed password. For added security Us
 - express-validator
 - mongoose
 - helmet
-+ dotenv
-+ jsonwebtoken
-+ morgan
+- dotenv
+- jsonwebtoken
+- morgan
+
+### Run Locally
+
+git clone (https://github.com/Don1Genas/BLOG-API)
 
 ### Routes
+
+app.get('/') returns message "WELCOME TO MY BLOG API!!"
 
 
 #### Auth('/auth') creates Users and Login
