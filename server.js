@@ -9,7 +9,7 @@ const authRouter = require('./routes/authRouter')
 const blogRouter = require('./routes/blogRouter')
 
 const app = express();
-const PORT = 4005;
+const PORT = process.env.PORT || 4005;
 
 //Middleware
 app.use(express.json())
