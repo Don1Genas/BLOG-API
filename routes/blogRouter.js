@@ -20,6 +20,8 @@ router.get('/', authMiddleware, async (req, res) => {
 router.post('/', authMiddleware, async (req, res) => {
     const blogData = req.body // gets the data from the request
     blogData.user=req.user.id 
+    blogData.created_by=req.user.id 
+    
     console.log(blogData);
     try {
         const blog = await BlogModel.create(blogData) // Created the blog in the DB

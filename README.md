@@ -14,6 +14,7 @@ The Blog API also protects the API with a hashed password. For added security Us
 - dotenv
 - jsonwebtoken
 - morgan
+- cors
 
 ### Run Locally
 
